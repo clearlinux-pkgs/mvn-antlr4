@@ -4,7 +4,7 @@
 #
 Name     : mvn-antlr4
 Version  : 4.5.3
-Release  : 3
+Release  : 4
 URL      : https://github.com/antlr/antlr4/archive/4.5.3.tar.gz
 Source0  : https://github.com/antlr/antlr4/archive/4.5.3.tar.gz
 Source1  : https://repo.maven.apache.org/maven2/org/antlr/antlr4-master/4.7/antlr4-master-4.7.pom
@@ -42,6 +42,27 @@ data components for the mvn-antlr4 package.
 %build
 
 %install
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-master/4.7
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-master/4.7
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-maven-plugin/4.7
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-maven-plugin/4.7
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-maven-plugin/4.7
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-maven-plugin/4.7
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.7
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.7
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.7
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.7
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4/4.7
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4/4.7
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4/4.7
+cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4/4.7
+
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-master/4.5.3
 cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-master/4.5.3
 
@@ -64,7 +85,14 @@ cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-runti
 %files data
 %defattr(-,root,root,-)
 /usr/share/java/.m2/repository/org/antlr/antlr4-master/4.5.3/antlr4-master-4.5.3.pom
+/usr/share/java/.m2/repository/org/antlr/antlr4-master/4.7/antlr4-master-4.7.pom
+/usr/share/java/.m2/repository/org/antlr/antlr4-maven-plugin/4.7/antlr4-maven-plugin-4.7.jar
+/usr/share/java/.m2/repository/org/antlr/antlr4-maven-plugin/4.7/antlr4-maven-plugin-4.7.pom
 /usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.5.1-1/antlr4-runtime-4.5.1-1.jar
 /usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.5.1-1/antlr4-runtime-4.5.1-1.pom
 /usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.5.3/antlr4-runtime-4.5.3.jar
 /usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.5.3/antlr4-runtime-4.5.3.pom
+/usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar
+/usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.pom
+/usr/share/java/.m2/repository/org/antlr/antlr4/4.7/antlr4-4.7.jar
+/usr/share/java/.m2/repository/org/antlr/antlr4/4.7/antlr4-4.7.pom
