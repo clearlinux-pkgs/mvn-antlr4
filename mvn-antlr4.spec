@@ -4,7 +4,7 @@
 #
 Name     : mvn-antlr4
 Version  : 4.5.3
-Release  : 6
+Release  : 7
 URL      : https://github.com/antlr/antlr4/archive/4.5.3.tar.gz
 Source0  : https://github.com/antlr/antlr4/archive/4.5.3.tar.gz
 Source1  : https://repo.maven.apache.org/maven2/org/antlr/antlr4-annotations/4.3/antlr4-annotations-4.3.jar
@@ -22,10 +22,13 @@ Source12  : https://repo.maven.apache.org/maven2/org/antlr/antlr4/4.3/antlr4-4.3
 Source13  : https://repo.maven.apache.org/maven2/org/antlr/antlr4/4.7/antlr4-4.7.jar
 Source14  : https://repo.maven.apache.org/maven2/org/antlr/antlr4/4.7/antlr4-4.7.pom
 Source15  : https://repo1.maven.org/maven2/org/antlr/antlr4-master/4.5.3/antlr4-master-4.5.3.pom
-Source16  : https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.5.1-1/antlr4-runtime-4.5.1-1.jar
-Source17  : https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.5.1-1/antlr4-runtime-4.5.1-1.pom
-Source18  : https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.5.3/antlr4-runtime-4.5.3.jar
-Source19  : https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.5.3/antlr4-runtime-4.5.3.pom
+Source16  : https://repo1.maven.org/maven2/org/antlr/antlr4-master/4.7.1/antlr4-master-4.7.1.pom
+Source17  : https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.5.1-1/antlr4-runtime-4.5.1-1.jar
+Source18  : https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.5.1-1/antlr4-runtime-4.5.1-1.pom
+Source19  : https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.5.3/antlr4-runtime-4.5.3.jar
+Source20  : https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.5.3/antlr4-runtime-4.5.3.pom
+Source21  : https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7.1/antlr4-runtime-4.7.1.jar
+Source22  : https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7.1/antlr4-runtime-4.7.1.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -110,17 +113,26 @@ cp %{SOURCE14} %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4/4.7/a
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-master/4.5.3
 cp %{SOURCE15} %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-master/4.5.3/antlr4-master-4.5.3.pom
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.5.1-1
-cp %{SOURCE16} %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.5.1-1/antlr4-runtime-4.5.1-1.jar
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-master/4.7.1
+cp %{SOURCE16} %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-master/4.7.1/antlr4-master-4.7.1.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.5.1-1
-cp %{SOURCE17} %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.5.1-1/antlr4-runtime-4.5.1-1.pom
+cp %{SOURCE17} %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.5.1-1/antlr4-runtime-4.5.1-1.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.5.1-1
+cp %{SOURCE18} %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.5.1-1/antlr4-runtime-4.5.1-1.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.5.3
-cp %{SOURCE18} %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.5.3/antlr4-runtime-4.5.3.jar
+cp %{SOURCE19} %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.5.3/antlr4-runtime-4.5.3.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.5.3
-cp %{SOURCE19} %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.5.3/antlr4-runtime-4.5.3.pom
+cp %{SOURCE20} %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.5.3/antlr4-runtime-4.5.3.pom
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.7.1
+cp %{SOURCE21} %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.7.1/antlr4-runtime-4.7.1.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.7.1
+cp %{SOURCE22} %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.7.1/antlr4-runtime-4.7.1.pom
 
 
 %files
@@ -132,6 +144,7 @@ cp %{SOURCE19} %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-runti
 /usr/share/java/.m2/repository/org/antlr/antlr4-annotations/4.3/antlr4-annotations-4.3.pom
 /usr/share/java/.m2/repository/org/antlr/antlr4-master/4.3/antlr4-master-4.3.pom
 /usr/share/java/.m2/repository/org/antlr/antlr4-master/4.5.3/antlr4-master-4.5.3.pom
+/usr/share/java/.m2/repository/org/antlr/antlr4-master/4.7.1/antlr4-master-4.7.1.pom
 /usr/share/java/.m2/repository/org/antlr/antlr4-master/4.7/antlr4-master-4.7.pom
 /usr/share/java/.m2/repository/org/antlr/antlr4-maven-plugin/4.7/antlr4-maven-plugin-4.7.jar
 /usr/share/java/.m2/repository/org/antlr/antlr4-maven-plugin/4.7/antlr4-maven-plugin-4.7.pom
@@ -141,6 +154,8 @@ cp %{SOURCE19} %{buildroot}/usr/share/java/.m2/repository/org/antlr/antlr4-runti
 /usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.5.1-1/antlr4-runtime-4.5.1-1.pom
 /usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.5.3/antlr4-runtime-4.5.3.jar
 /usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.5.3/antlr4-runtime-4.5.3.pom
+/usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.7.1/antlr4-runtime-4.7.1.jar
+/usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.7.1/antlr4-runtime-4.7.1.pom
 /usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar
 /usr/share/java/.m2/repository/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.pom
 /usr/share/java/.m2/repository/org/antlr/antlr4/4.3/antlr4-4.3.jar
