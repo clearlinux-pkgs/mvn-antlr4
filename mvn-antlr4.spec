@@ -4,7 +4,7 @@
 #
 Name     : mvn-antlr4
 Version  : 4.5.3
-Release  : 7
+Release  : 8
 URL      : https://github.com/antlr/antlr4/archive/4.5.3.tar.gz
 Source0  : https://github.com/antlr/antlr4/archive/4.5.3.tar.gz
 Source1  : https://repo.maven.apache.org/maven2/org/antlr/antlr4-annotations/4.3/antlr4-annotations-4.3.jar
